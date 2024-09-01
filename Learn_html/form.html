@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+        <legend>Personal info</legend>
+    <article id="contact">
+      <h1>contact me</h1>
+      <p>Info to be given</p>
+
+      <!-- if u want to select sumilar name use cmd+d -->
+      <form action="https://httpbin.org/post" method="post">
+
+        <h2>text type input placeholde and required</h2>
+        <p>
+        <label for="firstName">First Name</label>
+        <!-- 
+        autofocus---it will do focus on the particular part to be filled
+        autocomplete----it will give suggestion/reccomend the words to  user -->
+        <!-- required----mandatory -->
+
+       
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="vaishu"
+            autocomplete="on"
+            required
+          />
+        </p>
+        <p>
+          <label for="LastName">Last Name</label>
+
+          <input
+            type="text"
+            name="LastName"
+            id="LastName"
+            placeholder="Ganesan"
+            autocomplete="on"
+            required
+          />
+        </p>
+        <h2>pwd </h2>
+        <p>
+          <label for="password">password</label>
+
+          <input type="password" name="pwd" id="pwd" required />
+        </p>
+       
+        <h2>phone num and tel type for it</h2>
+        <p>
+          <label for="phone">phone number</label>
+
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            required
+            placeholder="1234567890"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+          />
+        </p>
+        <h2>how to increment by 10 through number type in input</h2>
+        <p>
+          <label for="decade">Fav year</label>
+          <!-- value if u didn't provide any specific details it will take the value as default one -->
+          <!-- step="10"this will increase the value by 10 -->
+
+          <input
+            type="number"
+            name="decade"
+            id="decade"
+            required
+            value="2008"
+            placeholder="decade"
+            min="1998"
+            max="3000"
+            step="10"
+          />
+        </p>
+
+
+        <h2>how to increment by 1(default without step) through number type in input</h2>
+        <p>
+          <label for="bal">bal money</label>
+          <!-- value if u didn't provide any specific details it will take the value as default one -->
+          <!-- step="10"this will increase the value by 10 -->
+          <!-- min and max are the stopping it won't go beyond that mentioned value -->
+
+          <input
+            type="number"
+            name="bal"
+            id="bal"
+            required
+            value="500"
+            placeholder="bal"
+            min="100"
+            max="1000"
+          
+          />
+        </p>
+        <!-- multiple size in select use to help us in put the enter items as the size mentioned here -->
+        <h2>select option,option group</h2>
+        <p>
+          <label for="fav food">fav food </label>
+
+          <select name="food" id="food" multiple size="4">
+            <optgroup label="tiffen items">
+              <option value="">idly</option>
+              <option value="dosa">dosa</option>
+              <option value="pongal">pongal</option>
+            </optgroup>
+            <optgroup label="beverages">
+              <option value="tea">tea</option>
+              <option value="coffee">coffee</option>
+              <option value="milk" selected>milk</option>
+            </optgroup>
+          </select>
+        </p>
+        <h2>dataList and data suggestion </h2>
+        <!-- dataList will be more betetr way of using it in dataList u can provid the suggestion also throughh text while suggestins providedas the dropdown list   -->
+        <p>
+          <label for="fav color">color food </label>
+
+          <input type="text" name="color" id="color" list="colorlist">
+          <datalist id="colorlist">
+            <option value="blue"></option>
+            <option value="red"></option>
+            <option value="orange" ></option>
+
+    
+              <option value="green"></option>
+              <option value="pink"></option>
+              <option value="white"></option>
+         
+        </datalist>
+        </input>
+        </p>
+<h2>Radio button</h2>
+
+<!-- id must be unique for all  -->
+        <p>
+            <p>
+            <input type="radio" name="ice" id="ice1"> 
+            <label for="coco">coco</label>   
+        </p>
+        <p>
+
+      
+            <input type="radio" name="ice" id="ice2"> 
+            <label for="berry">berry</label>   
+        </p>
+        <p>
+
+     
+            <input type="radio" name="ice" id="ice3"> 
+            <label for="lime">lime</label>   
+        </p>
+            </p>
+<h2>Checkbox</h2>
+            <p>
+                <p>
+                <input type="checkbox" name="fruits" id="fruits1"> 
+                <label for="mango">mango</label>   
+            </p>
+            <p>
+    
+          
+                <input type="checkbox" name="fruits" id="fruits2"> 
+                <label for="apple">apple</label>   
+            </p>
+            <p>
+    
+         
+                <input type="checkbox" name="fruits" id="fruits3"> 
+                <label for="pine">pine</label>   
+            </p>
+                </p>
+
+
+                
+      
+    </article>
+</fieldset>
+
+<fieldset>
+    <legend>Feedback</legend>
+    <p>
+ <label for="Note pls">note please</label>
+</p>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="give a message"></textarea>
+
+</fieldset>
+
+<br>
+
+
+
+
+
+<button type="submit">Submit</button>
+<button type="reset">reset</button>
+</form>
+<br>
+<a href="#">back to top</a>
+<br>
+<br>
+  </body>
+</html>

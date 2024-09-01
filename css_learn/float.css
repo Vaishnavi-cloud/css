@@ -1,0 +1,9 @@
+.ff p {
+  width: 30%;
+  float: left;
+  /* float: right; */
+}
+
+.ff p:nth-child(4) {
+  clear: left;
+}

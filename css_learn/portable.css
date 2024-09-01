@@ -1,0 +1,29 @@
+.para1 {
+  background-color: blanchedalmond;
+}
+.para2 {
+  background-color: cornflowerblue;
+}
+.para3 {
+  background-color: darkgoldenrod;
+}
+.para4 {
+  background-color: palevioletred;
+}
+
+/* @media screen,all */
+@media (min-width: 801px) {
+  .container p {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }
+  .para3 {
+    background-color: indigo;
+  }
+}
+@media print {
+  body {
+    background-color: none;
+  }
+}

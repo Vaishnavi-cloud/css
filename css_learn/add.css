@@ -1,0 +1,17 @@
+.blue {
+  background-color: steelblue;
+  width: 600px;
+  height: 600px;
+}
+.yel {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  /* //only if the position is relative offest such as top,right,left,bottom are accepted */
+  /* top: 10px;
+  left: 40px;
+  right: 40px; */
+  left: 200px;
+  bottom: 400px;
+}

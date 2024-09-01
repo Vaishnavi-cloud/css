@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <title>table</title>
+  </head>
+  <body>
+    <!-- caption,thead,tbody are for some more information to the site for better Understanding -->
+    <!-- table,tr,td are main factors -->
+    <!-- time is actually considering the 24 hours   <time datetime="12:00">-->
+
+    <table>
+      <thead>
+        <caption>
+          <tr>
+            <td colspan="4">My schedule</td>
+          </tr>
+        </caption>
+
+        <tr>
+          <th>&nbsp;</th>
+          <th>time</th>
+          <th>level</th>
+          <th>food</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Mon</th>
+          <td>
+            <time datetime="12:00">12am</time>-<time datetime="16:00">4am</time>
+          </td>
+          <td>water</td>
+          <td>idly</td>
+        </tr>
+        <tr>
+          <th>tue</th>
+          <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+          </td>
+          <td>water</td>
+          <td>idly</td>
+        </tr>
+        <tr>
+          <th>wed</th>
+          <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+          </td>
+          <td>water</td>
+          <td>idly</td>
+        </tr>
+
+        <tr>
+          <th>thru</th>
+          <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+          </td>
+          <td colspan="2">free</td>
+        </tr>
+        <tr>
+          <th rowspan="2">fri</th>
+          <td rowspan="2">
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+          </td>
+          <td>water</td>
+          <td>idly</td>
+        </tr>
+        <tr>
+          <td>water</td>
+          <td>idly</td>
+        </tr>
+        <tr>
+          <th colspan="4">water</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
